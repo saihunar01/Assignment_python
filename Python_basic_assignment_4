@@ -1,0 +1,72 @@
+1. What exactly is []?
+Ans:
+ [] is an empty List.
+
+2. In a list of values stored in a variable called spam, how would you assign the value 'hello' as the third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+Let's pretend the spam includes the list ['a', 'b', 'c', 'd'] for the next three queries.
+Ans:
+spam[2]=’hello’
+
+3. What is the value of spam[int(int('3' * 2) / 11)]?
+Ans:
+spam[int(int('3' * 2) / 11)]
+spam[int(33 / 11)]
+spam[int(3.0)]
+spam[3]= d
+
+4. What is the value of spam[-1]?
+Ans: will start from last item of the list i.e.  d
+
+5. What is the value of spam[:2]?
+Ans: 
+Will fetch first 2 items of the list ( at 0th index and at 1st index)
+[‘a’,’b’]
+
+Let's pretend bacon has the list [3.14, 'cat' 11, 'cat', True] for the next three questions.
+6. What is the value of bacon.index('cat')?
+Ans:   1
+
+
+7. How does bacon.append(99) change the look of the list value in bacon?
+Ans:
+[3.14, 'cat', 11, 'cat', True, 99]
+
+8. How does bacon.remove('cat') change the look of the list in bacon?
+
+Ans :  [3.14, 11, 'cat', True, 99]
+
+9. What are the list concatenation and list replication operators?
+Ans:
+The operator for list concatenation is + and  for replication is *
+
+10. What is difference between the list methods append() and insert()?
+Ans:
+append() will add values only to the end of a list, insert() can add them anywhere in the list
+
+11. What are the two methods for removing items from a list?
+Ans: del and remove() list method are two ways to remove items from a list
+
+12. Describe how list values and string values are identical.
+Ans:
+len() , in , not in and for loop can be used with both list’s and string’s values , both had indexes ,both can be concatenated or replicated.
+
+13. What's the difference between tuples and lists?
+Ans:tuple are immutable while lists are not, tuple created parentheses with () while lists with square brackets []
+
+14. How do you type a tuple value that only contains the integer 42?
+Ans:
+A=(42,)
+
+15. How do you get a list value's tuple form? How do you get a tuple value's list form?
+Ans:
+list(a) , tuple(a)
+
+16. Variables that "contain" list values are not necessarily lists themselves. Instead, what do they contain?
+Ans: 
+Reference  to list values.
+
+17. How do you distinguish between copy.copy() and copy.deepcopy()?
+Ans: 
+copy.copy() : will create shallow copy
+copy.deepcopy() : will create deep copy, will duplicate the list.
+
