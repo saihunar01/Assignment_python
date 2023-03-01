@@ -1,0 +1,89 @@
+1.	Write a Python Program to Find the Factorial of a Number?
+Ans:-->
+
+num = int(input("Enter a number: "))
+factorial = 1
+if num == 0:
+   print("The factorial of 0 is 1")
+elif num>0:
+   for i in range(1,num + 1):
+       factorial = factorial*i
+   print(f'The factorial of {num} is {factorial}')
+else :
+    print("Sorry, factorial does not exist for negative numbers")
+   
+   
+   
+2.	Write a Python Program to Display the multiplication Table?
+Ans:-->
+num=int(input("Enter number: "))
+for i in range(1,11):
+    print(f'{num} X {i}= {num*i}')
+    
+    
+3.	Write a Python Program to Print the Fibonacci sequence?
+Ans:-->
+n=int(input("Enter Nunber: "))
+n1, n2 = 0, 1
+count = 0
+if n<=0 :
+    print("Incorrect input")
+else:
+   print("Fibonacci sequence: ")
+   while count < n:
+       print(n1)
+       sum = n1 + n2
+       # update values
+       n1 = n2
+       n2 = sum
+       count += 1
+       
+       
+4.	Write a Python Program to Check Armstrong Number?
+Ans:-->
+num=input("Enter the Number: ")
+sum=0
+number=int(num)
+for i in range(len(num),0,-1):
+    n=(int(num)//(10**(i-1)))
+    sum=sum+(n**3)
+    num=(int(num) %(10**(i-1)))
+if number==sum:
+    print(f"{number} Number is Armstrong")
+else:
+    print(f"{number} Number is not Armstrong")
+    
+    
+    
+    
+5.	Write a Python Program to Find Armstrong Number in an Interval?
+
+Ans:-->
+lower = int(input("Enter Lower range"))
+upper = int(input("Enter Upper range"))
+for num in range(lower, upper + 1):
+   order = len(str(num))
+   sum = 0
+   temp = num
+   while temp > 0:
+       digit = temp % 10
+       sum += digit ** order
+       temp //= 10
+   if num == sum:
+       print(num)
+       
+       
+ 6.	Write a Python Program to Find the Sum of Natural Numbers?
+ 
+ Ans:-->
+ num = int(input("ENter a Number: "))
+
+if num < 0:
+   print("Enter a positive number")
+else:
+   sum = 0
+   # use while loop to iterate until zero
+   while(num > 0):
+       sum += num
+       num -= 1
+   print(f"The sum is {sum}")
