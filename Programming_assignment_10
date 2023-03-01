@@ -1,0 +1,107 @@
+1.	Write a Python program to find sum of elements in list?
+
+Ans:-->
+total = 0
+list1 = [11, 5, 17, 18, 23]
+for i in range(0, len(list1)):
+    total = total + list1[i]
+print(f"Sum of all elements in given list: {total}")
+
+2.	Write a Python program to  Multiply all numbers in the list?
+
+Ans:-->
+total = 1
+list1 = [11, 5, 17, 18, 23]
+for i in range(0, len(list1)):
+    total = total * list1[i]
+print(f"Result of multiplication of all elements in given list is: {total}")
+
+
+3.	Write a Python program to find smallest number in a list?
+
+Ans:-->
+list1 = [10, 20, 1, 45, 99,67]
+print(f"Smallest element is: {min(list1)}")
+
+
+4.	Write a Python program to find largest number in a list?
+
+Ans:-->
+list1 = [10, 20, 1, 45, 99,67]
+print(f"Largest element is: {max(list1)}")
+
+
+5.	Write a Python program to find second largest number in a list?
+
+Ans:-->
+list1 = [10, 20, 1, 45, 99,67]
+list1.sort()
+print(f"The second largest element of the list is: {list1[-2]}")
+
+6.	Write a Python program to find N largest elements from a list?
+
+Ans:-->
+list1 = [10, 20, 1, 45, 99,67]
+list1.sort()
+n=int(input("Enter the number of large element : "))
+print(f"The {n} large elements of the list are:")
+for i in range(len(list1)-1,len(list1)-n-1,-1):
+    print(list1[i])
+    
+    
+7.	Write a Python program to print even numbers in a list?
+
+Ans:-->
+list1 = [10, 20, 1, 45, 99,67]
+for i in list1:
+    if i%2==0:
+        print(i)
+        
+        
+        
+8.	Write a Python program to print odd numbers in a List?
+
+Ans:-->
+list1 = [10, 20, 1, 45, 99,67]
+for i in list1:
+    if i%2!=0:
+        print(i)
+
+9.	Write a Python program to Remove empty List from List?
+Ans:-->
+list1 = [10, [],20, 1,[],[], 45,[],[], 99,67,[],[]]
+print(f'List Before removal of empty list: {list1}')
+list2=[x for x in list1 if x]
+print(f'List After removal of empty list: {list2}')
+
+
+10.	Write a Python program to Cloning or Copying a list?
+Ans:-->
+import copy
+list1 = [10, 20, 1, 45, 99,67]
+#list2=copy.copy(list1)
+#list2=copy.deepcopy(list1)
+list2=list1
+print(f'original list: {list1}')
+print(f'cloned list: {list2}')
+
+11.	Write a Python program to Count occurrences of an element in a list?
+Ans:-->
+
+list1 = [10, 20, 1, 45, 99,67,10,4,29,99,10,56,10]
+n=int(input('Enter the number to be searched in the list '))
+counter=0
+for i in list1:
+    if i==n:
+        counter+=1
+print(f'{n} is present in the list {counter} times')
+
+
+
+
+
+
+
+
+
+
