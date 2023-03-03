@@ -1,0 +1,80 @@
+1.	Write a Python Program to Add Two Matrices?
+
+Ans:-->
+x = [[1,2,3],
+    [4 ,5,6],
+    [7 ,8,9]]
+
+y = [[9,8,7],
+    [6,5,4],
+    [3,2,1]]
+
+result = [[x[i][j] + y[i][j]  for j in range(len(x[0]))] for i in range(len(x))]
+for z in result:
+   print(z)
+   
+2.	Write a Python Program to Multiply Two Matrices?
+Ans:-->
+x = [[1,2,3],
+    [4 ,5,6],
+    [7 ,8,9]]
+
+y = [[9,8,7],
+    [6,5,4],
+    [3,2,1]]
+
+result = [[0, 0, 0, ],
+        [0, 0, 0, ],
+        [0, 0, 0, ]]
+
+for i in range(len(x)):
+    for j in range(len(y[0])):
+        for k in range(len(y)):
+            result [i][j]+= x[i][k] * y[k][j]  
+for z in result:
+   print(z)
+
+
+
+
+3.	Write a Python Program to Transpose a Matrix?
+
+Ans:-->
+x = [[12,7],
+    [4 ,5],
+    [3 ,8]]
+
+y = [[0,0,0],
+         [0,0,0]]
+
+for i in range(len(x)):
+   for j in range(len(x[0])):
+       y[j][i] = x[i][j]
+
+for k in y:
+   print(k)
+   
+   
+   
+4.	Write a Python Program to Sort Words in Alphabetic Order?
+
+Ans:-->
+str=input("Enter the string: ")
+str=str.lower().split()
+str.sort()
+for s in str:
+    print(s)
+   
+   
+   
+5.	Write a Python Program to Remove Punctuation From a String?
+Ans:-->
+str=input("Enter the string: ")
+punctuations = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+new_str=''
+for i in str:
+    if i not in punctuations:
+        new_str+=i
+print(f'This is string without punctutaion: {new_str}')
+   
+   
